@@ -10,7 +10,7 @@ import OpenSSL
 import datetime
 
 parser = \
-    argparse.ArgumentParser(description='Welcome to Travelex SSLAuditer; Provide a CSV file with list of SSL domain and port; It will provide an CVS file as output of SSL certificate details'
+    argparse.ArgumentParser(description='Welcome to EasySSLAuditer; Provide a CSV file with list of SSL domain and port; It will provide an CVS file as output of SSL certificate details'
                             )
 parser.add_argument('--input', required=True, nargs='?',
                     type=argparse.FileType('r'),
