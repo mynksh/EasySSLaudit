@@ -1,5 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+## Program: EasySSLAuditor
+## Author: Mayank Sahu <mynk_sh@yahoo.co.in>
+## Current Version: 1.00
+## Revision History:
 
 import argparse
 import socket
