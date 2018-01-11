@@ -1,0 +1,120 @@
+
+
+*********Entered Main**********
+
+CSV row: {'\xef\xbb\xbfHostname': 'facebook.com', 'Port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfHostname': 'google.com', 'Port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfHostname': 'www.linkedin.com', 'Port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfHostname': 'www.bing.com', 'Port': '443'} || Error: 'hostname' 
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+CSV row: {'\xef\xbb\xbfHostname': 'facebook.com', 'Port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfHostname': 'google.com', 'Port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfHostname': 'www.linkedin.com', 'Port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfHostname': 'www.bing.com', 'Port': '443'} || Error: 'hostname' 
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+CSV row: {'\xef\xbb\xbfhostname': 'facebook.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'google.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.linkedin.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.bing.com', 'port': '443'} || Error: 'hostname' 
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+CSV row: {'\xef\xbb\xbfhostname': 'facebook.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'google.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.linkedin.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.bing.com', 'port': '443'} || Error: 'hostname' 
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+CSV row: {'\xef\xbb\xbfhostname': 'facebook.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'google.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.linkedin.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.bing.com', 'port': '443'} || Error: 'hostname' 
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+CSV row: {'\xef\xbb\xbfhostname': 'facebook.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'google.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.linkedin.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.bing.com', 'port': '443'} || Error: 'hostname' 
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+CSV row: {'\xef\xbb\xbfhostname': 'facebook.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'google.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.linkedin.com', 'port': '443'} || Error: 'hostname' 
+CSV row: {'\xef\xbb\xbfhostname': 'www.bing.com', 'port': '443'} || Error: 'hostname' 
+
+
+************Exit Main**************
+
+
+
+*********Entered Main**********
+
+New domain: facebook.com 
+New Port: 443 
+Connecting to : facebook.com:443 Start date: 2016-12-09 00:00:00; End Date: 2018-01-25 12:00:00; Issued by: DigiCert SHA2 High Assurance Server CA; Is it Expired: False; Issued to *.facebook.com; IP add 157.240.16.35 
+New domain: google.com 
+New Port: 443 
+Connecting to : google.com:443 Start date: 2017-12-13 13:31:40; End Date: 2018-03-07 13:01:00; Issued by: Google Internet Authority G2; Is it Expired: False; Issued to *.google.com; IP add 216.58.199.174 
+New domain: linkedin.com 
+New Port: 443 
+Connecting to : linkedin.com:443 Start date: 2016-12-09 00:00:00; End Date: 2018-12-14 12:00:00; Issued by: DigiCert SHA2 Secure Server CA; Is it Expired: False; Issued to www.linkedin.com; IP add 108.174.10.10 
+New domain: bing.com 
+New Port: 443 
+Connecting to : bing.com:443 Start date: 2017-07-20 17:47:08; End Date: 2019-07-10 17:47:08; Issued by: Microsoft IT TLS CA 5; Is it Expired: False; Issued to www.bing.com; IP add 204.79.197.200 
+
+
+************Exit Main**************
+

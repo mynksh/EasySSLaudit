@@ -1,0 +1,5 @@
+Hostname,Port,IP address,Issued_by,Issued_To,Start_Date,End_Date,Remaining _days
+facebook.com,443,157.240.16.35,DigiCert SHA2 High Assurance Server CA,*.facebook.com,2016-12-09 00:00:00,2018-01-25 12:00:00,123
+google.com,443,216.58.199.174,Google Internet Authority G2,*.google.com,2017-12-13 13:31:40,2018-03-07 13:01:00,123
+linkedin.com,443,108.174.10.10,DigiCert SHA2 Secure Server CA,www.linkedin.com,2016-12-09 00:00:00,2018-12-14 12:00:00,123
+bing.com,443,204.79.197.200,Microsoft IT TLS CA 5,www.bing.com,2017-07-20 17:47:08,2019-07-10 17:47:08,123
