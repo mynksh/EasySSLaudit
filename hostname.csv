@@ -1,4 +1,5 @@
-﻿hostname,port
+﻿Hostname,Port
 facebook.com,443
 google.com,443
-www.linkedin.com,
+www.linkedin.com,443
+www.bing.com,443
