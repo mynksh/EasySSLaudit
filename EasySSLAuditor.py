@@ -4,6 +4,7 @@
 ## Author: Mayank Sahu <mynk_sh@yahoo.co.in>
 ##Current Version: 1.10
 
+
 import argparse
 import socket
 import ssl
@@ -11,12 +12,97 @@ import csv
 import re
 import OpenSSL
 import datetime
+import smtplib  # added on 01 August
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import Encoders
+#from email.mime.image import MIMEImage
+# from cryptography import x509
+import sys, os
 #from cryptography import x509
 
-parser = argparse.ArgumentParser(description= "Welcome to Travelex SSLAuditer help section; \n\n ** Provide a CSV file with list of SSL domain and port; It will provide an CVS file as output of SSL certificate details")
+# Add email addresses
+sender = 'email@somedomain.com'
+#receivers = 'Cybersecurity@travelex.com'
+receivers = 'send_report_to@somedomain.com'
+SMTPservername = 'ServerSMPT'
+threshold_days = int("90")
+
+email_top = """\
+<html>
+  <head>
+  <style>
+#Fonthead {
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #422789;
+font-weight: normal;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: bold;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+
+body {
+font-family: Verdana, Geneva, sans-serif;
+font-size: 12px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #352889;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+table {
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+  </head>
+  <body>
+  <p>SSLaudit 1.2 - Email Notification<p>
+    <h2 id='Fonthead'>SSLAudit</h2>
+    <h4>Below are the details of SSL certificate expiring in next 90 days or Have already expired: </h4>
+<table>
+  <tr>
+    <th>Domain</th>
+    <th>IP</th>
+    <th>Days Remaining</th>
+  </tr>
+"""
+email_bottom =  """\
+ </table>
+ </br></br>
+  <p>Note: This is an automated email.</p></br></br>
+  <p>
+  Thanks</br>
+  
+  </p>
+  </body>
+ </html>
+"""
+
+parser = argparse.ArgumentParser(description= "Welcome to EasySSLAuditer help section; \n\n ** Provide a CSV file with list of SSL domain and port; It will provide an CVS file as output of SSL certificate details")
 parser.add_argument('-if','--input', required=True, nargs='?', type=argparse.FileType('r'), help='Provide csv file with hostname and port Format:[hostname,port]')
 parser.add_argument('-of','--output', required=True, nargs='?', type=argparse.FileType('wb',0), help='Provide name of the file where output will be stored')
-parser.add_argument('-t','--timeout', required=False, nargs='?', type=int,default='4', help='Set the SSL conntion wait time : Default is 4 Sec')
+parser.add_argument('-t','--timeout', required=False, nargs='?', type=int,default='4', help='Set the SSL connection wait time : Default is 4 Sec')
 args = parser.parse_args()
 
 def port_safecheck(port):
