@@ -13,10 +13,10 @@ import OpenSSL
 import datetime
 #from cryptography import x509
 
-parser = argparse.ArgumentParser(description= "Welcome to Travelex SSLAuditer help section; \n\n ** Provide a CSV file with list of SSL domain and port; It will provide an CVS file as output of SSL certificate details")
+parser = argparse.ArgumentParser(description= "Welcome to EasySSLAuditer help section; \n\n ** Provide a CSV file with list of SSL domain and port; It will provide an CVS file as output of SSL certificate details")
 parser.add_argument('-if','--input', required=True, nargs='?', type=argparse.FileType('r'), help='Provide csv file with hostname and port Format:[hostname,port]')
 parser.add_argument('-of','--output', required=True, nargs='?', type=argparse.FileType('wb',0), help='Provide name of the file where output will be stored')
-parser.add_argument('-t','--timeout', required=False, nargs='?', type=int,default='4', help='Set the SSL conntion wait time : Default is 4 Sec')
+parser.add_argument('-t','--timeout', required=False, nargs='?', type=int,default='4', help='Set the SSL connection wait time : Default is 4 Sec')
 args = parser.parse_args()
 
 def port_safecheck(port):
